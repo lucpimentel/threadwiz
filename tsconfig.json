@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/threadwiz_logo.tsx", "app/components/right_sidebar.js", "app/components/sidebar_icon.js", "app/components/chains/hook_evaluator_chain.jsx", "app/components/features/hook_evaluation/evaluation_card.tsx", "app/api/backend/hook_evaluator.jsx", "app/components/sidebar.jsx"],
+  "exclude": ["node_modules"]
+}
