@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "vercel dev",
     "build": "next start",
     "start": "next start",
     "format:write": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
