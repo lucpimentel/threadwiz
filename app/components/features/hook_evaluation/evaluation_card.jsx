@@ -17,7 +17,7 @@ const EvaluationCard = () => {
     const fetchData = async () => {
       try {
         setLoading(true); // Set loading to true before making the API call
-        const extractedcontent = content.content.map((item: any) => item.content[0].text).join(' ')
+        const extractedcontent = content.content.map((item) => item.content[0].text).join(' ')
         console.log(extractedcontent);
         const data = await HookEvaluator(extractedcontent);
         setApiResponse(data);
