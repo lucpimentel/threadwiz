@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Grid, Text, Link } from "@nextui-org/react";
 import EvalLoading from './eval_loading';
 
-const EvaluationResult = ({ apiResponse, loading }) => {
+const EvaluationResult = ({ apiResponsec: any, loading: any }) => {
 
   const output = apiResponse && apiResponse.output;
   const rationale = output && JSON.parse(output)["Curiosity-inducing lead"]["rationale"];
