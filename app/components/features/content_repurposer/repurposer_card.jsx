@@ -8,14 +8,14 @@ const EvaluationCard = () => {
   // Use the useLocalStorage hook to store the value of 'content'
   const [content, setContent] = useLocalStorage('content', '');
 
-  const [apiResponse, setApiResponse] = useState<any>(null);
+  const [apiResponse, setApiResponse] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true); // Set loading to true before making the API call
-        const extractedcontent = content.content.map((item: any) => item.content[0].text).join(' ')
+        const extractedcontent = content.content.map((item) => item.content[0].text).join(' ')
         console.log(extractedcontent);
         const data = await ContentRepurposer(extractedcontent);
         setApiResponse(data["output"]);
