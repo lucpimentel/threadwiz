@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Grid, Text, Link } from "@nextui-org/react";
 import EvalLoading from './eval_loading';
 
-const EvaluationResult = ({ apiResponse, loading} : { apiResponse: any; loading: any }) => {
+const EvaluationResult: React.FunctionComponent<{ apiResponse: any; loading: boolean }> = ({ apiResponse, loading }) => {
 
   const output = apiResponse && apiResponse.output;
   const rationale = output && JSON.parse(output)["Practical value"]["rationale"];
